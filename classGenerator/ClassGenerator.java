@@ -26,7 +26,7 @@ public class ClassGenerator<T> implements Generator<T> {
 		return null;
 	}
 
-	public static <T> Generator<T> register(Class<T> classType ) {
+	public static <T> ClassGenerator<T> register(Class<T> classType ) {
 		return new ClassGenerator<T>(classType);
 	}
 }
